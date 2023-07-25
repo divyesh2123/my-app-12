@@ -1,1 +1,45 @@
 {{title}}
+
+{{number1}}
+
+
+<app-button></app-button>
+
+<img [src]="mytest"/>
+
+<p [ngClass]="classes">This is the test</p>
+
+<!-- Bind button disabled state to `isUnchanged` property -->
+<button type="button" [disabled]="isUnchanged">Disabled Button</button>
+
+<nav [style.background-color]="isUnchanged?'red' : 'black'">This is value</nav>
+
+<table>
+
+<tr *ngFor="let post of posts"><td>{{post.email}}</td> 
+    <td>{{post.name}}</td></tr>
+
+</table>
+
+<table>
+
+    <tr *ngFor="let use of users"><td>{{use.username}}</td> 
+        <td>{{use.address.city}}</td>
+        <td>{{use.address.geo.lat}}</td>
+    
+    
+    </tr>
+    
+    </table>
+
+
+    <table>
+
+        <tr *ngFor="let s of myInfo.products"><td>{{s.discountPercentage}}</td> 
+            <td>{{s.title}}</td>
+            <td>{{s.price}}</td>
+        
+        
+        </tr>
+        
+        </table>
