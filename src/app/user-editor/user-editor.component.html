@@ -1,0 +1,87 @@
+
+
+<form [formGroup]="userEd" 
+(ngSubmit)="onSubmit()">
+
+<label for="title">Title:</label>
+
+<select id="title" formControlName="title">
+
+  <option *ngFor="let b of titlesData" value={{b.Id}}>{{b.title}}</option>
+
+
+</select>
+
+<label for="name">name: </label>
+<input id="name" type="text" 
+formControlName="name">
+
+<label for="username">username: </label>
+<input id="username" type="text" 
+formControlName="username">
+
+
+<label for="email">email: </label>
+<input id="email" type="text" 
+formControlName="email">
+
+
+<label for="gender">Gender: </label>
+Male : <input  type="radio" name="gender" 
+formControlName="gender" value="M">
+
+Female : <input  type="radio"  name="gender" 
+formControlName="gender" value="F">
+
+
+
+<label for="isterms">Terms: </label>
+ <input  type="checkbox" name="isterms" 
+formControlName="isterms">
+
+<div *ngFor="let h of hobbies; let i = index" formArrayName="hobbies">
+  <input type="checkbox" [formControlName]= "i" value={{h}}>
+  <span>{{h}} {{i}}</span>
+</div>
+
+
+
+
+
+<div formGroupName="address">
+    <h2>Address</h2>
+  
+    <label for="street">Street: </label>
+    <input id="street" type="text" formControlName="street">
+  
+    <label for="city">City: </label>
+    <input id="city" type="text" formControlName="city">
+  
+    <label for="state">suite: </label>
+    <input id="state" type="text" formControlName="suite">
+  
+    <label for="zip">Zip Code: </label>
+    <input id="zip" type="text" formControlName="zipcode">
+
+
+    
+<div formGroupName="geo">
+
+    <label for="lat">lat: </label>
+    <input id="lat" type="text" formControlName="lat">
+  
+    <label for="lng">lng: </label>
+    <input id="lng" type="text"
+    
+    formControlName="lng"   class="form-control" >
+
+
+</div>
+
+
+  </div>
+
+
+<input type="submit"  value="save"/>
+
+</form>

@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { UserEditorComponent } from './user-editor/user-editor.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
     HomeComponent,
     ButtonComponent,
     NameEditorComponent,
-    ProfileEditorComponent
+    ProfileEditorComponent,
+    UserEditorComponent
   ],
   imports: [
     BrowserModule,

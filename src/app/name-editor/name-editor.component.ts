@@ -21,7 +21,11 @@ export class NameEditorComponent implements OnInit {
 
   displayInfo()
   {
-    this.fullname.setValue(this.firstname.value + " " + this.lastname.value);
+    this.fullname.
+    setValue(this.firstname.value + " " 
+    + this.lastname.value);
+
+   
   }
 
 }
