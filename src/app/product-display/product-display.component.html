@@ -1,0 +1,15 @@
+
+<div class="row">
+<div class="col-4" *ngFor="let p of data">
+<div class="card" style="width:400px">
+    <img class="card-img-top" [src]="p.image" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">{{p.title}}</h4>
+      <p class="card-text">{{p.description}}</p>
+      <a href="#" class="btn btn-primary">Add To Cart</a>
+    </div>
+  </div>
+
+</div>
+
+</div>

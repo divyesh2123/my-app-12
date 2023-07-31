@@ -10,6 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { UserEditorComponent } from './user-editor/user-editor.component';
+import { ProductDisplayComponent } from './product-display/product-display.component';
+import { UserValidationComponent } from './user-validation/user-validation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { UserEditorComponent } from './user-editor/user-editor.component';
     ButtonComponent,
     NameEditorComponent,
     ProfileEditorComponent,
-    UserEditorComponent
+    UserEditorComponent,
+    ProductDisplayComponent,
+    UserValidationComponent
   ],
   imports: [
     BrowserModule,
