@@ -10,7 +10,7 @@ export class UserValidationComponent implements OnInit {
 
   isValid : boolean = true;
   profileForm = this.fb.group({
-    firstName: ['',[Validators.required,Validators.maxLength(15),Validators.,Validators.email,Validators.pattern('^[a-z][A-Z]')]],
+    firstName: ['',[Validators.required,Validators.maxLength(15),Validators.email,Validators.pattern('^[a-z][A-Z]')]],
 
     lastName: ['',Validators.required],
     address: this.fb.group({

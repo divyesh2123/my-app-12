@@ -12,6 +12,7 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
 import { UserEditorComponent } from './user-editor/user-editor.component';
 import { ProductDisplayComponent } from './product-display/product-display.component';
 import { UserValidationComponent } from './user-validation/user-validation.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UserValidationComponent } from './user-validation/user-validation.compo
     ProfileEditorComponent,
     UserEditorComponent,
     ProductDisplayComponent,
-    UserValidationComponent
+    UserValidationComponent,
+    MyprofileComponent
   ],
   imports: [
     BrowserModule,
