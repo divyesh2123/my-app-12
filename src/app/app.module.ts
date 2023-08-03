@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ButtonComponent } from './button/button.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { UserEditorComponent } from './user-editor/user-editor.component';
 import { ProductDisplayComponent } from './product-display/product-display.component';
 import { UserValidationComponent } from './user-validation/user-validation.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
+import { LoginComponent } from './login/login.component';
+import { RegiComponent } from './regi/regi.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,16 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
     UserEditorComponent,
     ProductDisplayComponent,
     UserValidationComponent,
-    MyprofileComponent
+    MyprofileComponent,
+    LoginComponent,
+    RegiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   
   ],
   providers: [],
