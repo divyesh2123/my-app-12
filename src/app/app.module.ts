@@ -15,6 +15,14 @@ import { UserValidationComponent } from './user-validation/user-validation.compo
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { LoginComponent } from './login/login.component';
 import { RegiComponent } from './regi/regi.component';
+import { ResumeComponent } from './resume/resume.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { HeaderComponent } from './header/header.component';
+import { Login1Component } from './login1/login1.component';
+import { BasiccheckComponent } from './basiccheck/basiccheck.component';
+import { AdvancecheckComponent } from './advancecheck/advancecheck.component';
+import { FinalcheckComponent } from './finalcheck/finalcheck.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +36,15 @@ import { RegiComponent } from './regi/regi.component';
     UserValidationComponent,
     MyprofileComponent,
     LoginComponent,
-    RegiComponent
+    RegiComponent,
+    ResumeComponent,
+    EmployeeComponent,
+    EmployeelistComponent,
+    HeaderComponent,
+    Login1Component,
+    BasiccheckComponent,
+    AdvancecheckComponent,
+    FinalcheckComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@ export class RegiComponent implements OnInit {
 
   title = 'Template driven forms';
  
-  @ViewChild('contactForm',null) contactForm: NgForm;
+ 
 
   contact:contact;
 
