@@ -23,6 +23,8 @@ import { Login1Component } from './login1/login1.component';
 import { BasiccheckComponent } from './basiccheck/basiccheck.component';
 import { AdvancecheckComponent } from './advancecheck/advancecheck.component';
 import { FinalcheckComponent } from './finalcheck/finalcheck.component';
+import { AddeditaccountComponent } from './addeditaccount/addeditaccount.component';
+import { AccountlistComponent } from './accountlist/accountlist.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { FinalcheckComponent } from './finalcheck/finalcheck.component';
     Login1Component,
     BasiccheckComponent,
     AdvancecheckComponent,
-    FinalcheckComponent
+    FinalcheckComponent,
+    AddeditaccountComponent,
+    AccountlistComponent
   ],
   imports: [
     BrowserModule,
