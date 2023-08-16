@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { UntypedFormBuilder } from '@angular/forms';
 import { LoginService } from '../login.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   errorMessage = '';
 
-  constructor( private fb: FormBuilder,
+  constructor( private fb: UntypedFormBuilder,
     private loginService : LoginService) { }
 
   ngOnInit(): void {

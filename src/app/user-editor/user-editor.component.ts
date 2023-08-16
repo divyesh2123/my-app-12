@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormArray, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-user-editor',
@@ -32,26 +32,26 @@ export class UserEditorComponent implements OnInit {
 
   ]
 
-  userEd = new FormGroup({
-    title: new FormControl(''),
-    name: new FormControl(''),
-    isterms: new FormControl(true),
-    gender: new FormControl(''),
-    username: new FormControl(''),
-    email: new FormControl(''),
-    hobbies : new FormArray( this.hobbies.map((value)=> {
+  userEd = new UntypedFormGroup({
+    title: new UntypedFormControl(''),
+    name: new UntypedFormControl(''),
+    isterms: new UntypedFormControl(true),
+    gender: new UntypedFormControl(''),
+    username: new UntypedFormControl(''),
+    email: new UntypedFormControl(''),
+    hobbies : new UntypedFormArray( this.hobbies.map((value)=> {
 
-      return new FormControl()
+      return new UntypedFormControl()
     })),
-    address: new FormGroup({
-      street: new FormControl(''),
-      city: new FormControl(''),
-      suite: new FormControl(''),
-      zipcode: new FormControl(''),
+    address: new UntypedFormGroup({
+      street: new UntypedFormControl(''),
+      city: new UntypedFormControl(''),
+      suite: new UntypedFormControl(''),
+      zipcode: new UntypedFormControl(''),
 
-      geo: new FormGroup({
-        lat: new FormControl(''),
-        lng: new FormControl('')
+      geo: new UntypedFormGroup({
+        lat: new UntypedFormControl(''),
+        lng: new UntypedFormControl('')
         
         
       })

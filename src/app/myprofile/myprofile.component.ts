@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CustomvalidationService } from '../customvalidation.service';
 
 @Component({
@@ -29,7 +29,7 @@ export class MyprofileComponent implements OnInit {
   );
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private customValidator: CustomvalidationService
 
   ) { 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-resume',
@@ -20,9 +20,9 @@ export class ResumeComponent implements OnInit {
     education: this.fb.array([ ])
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
-  neweducation(): FormGroup {
+  neweducation(): UntypedFormGroup {
     return this.fb.group({
       uni: '',
       passingYear: '',
@@ -30,7 +30,7 @@ export class ResumeComponent implements OnInit {
   }
 
   get education() {
-    return this.profileForm.get('education') as FormArray;
+    return this.profileForm.get('education') as UntypedFormArray;
   }
 
  

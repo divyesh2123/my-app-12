@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-user-validation',
@@ -21,13 +21,13 @@ export class UserValidationComponent implements OnInit {
     }),
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
   get f() {return this.profileForm.controls};
 
   get fsubcontrols() {
 
-    return this.profileForm.get('address') as FormGroup
+    return this.profileForm.get('address') as UntypedFormGroup
 
   }
 
